@@ -32,7 +32,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
-.q__head {
+.q__up {
     font-size: 20pt;
     margin: 10px;
     margin-bottom: 50px;
@@ -42,17 +42,17 @@ body {
     padding: 5px;
 }
 
-.q__body {
+.q__middle {
     margin: 10px;
 }
 
-.q__footer {
+.q__bottom {
     bottom: 0;
     display: block;
     width: 100%;
 }
 
-.footer__content {
+.bottom__content {
     padding: 5px;
 }
 
@@ -78,4 +78,4 @@ body {
 }
 
 .button_passive {
-    background: #8591dd;
+    background: #8591dd;}
