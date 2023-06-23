@@ -59,7 +59,7 @@ body {
 .button {
     border: 0;
     border-radius: 15px;
-    background: #2d2f99;
+    background: #8591dd;
     color: #fff;
     padding: 10px 25px;
     width: 70%;
@@ -76,6 +76,3 @@ body {
 .button_correct {
     background: #43a764;
 }
-
-.button_passive {
-    background: #8591dd;}
