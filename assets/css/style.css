@@ -76,3 +76,124 @@ body {
 .button_correct {
     background: #43a764;
 }
+
+/*footer*/
+.contact {
+    margin: auto;
+
+}
+
+.contact {
+    margin: 2% 2% 5% 2%;
+}
+
+.contact li {
+    height: 150px;
+    display: inline;
+
+    margin: 5% 2% 5% 1%;
+
+}
+
+/*navigation links*/
+.menu {
+    font-size: 110%;
+    line-height: 75px;
+}
+
+.menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid;
+}
+hr {
+    border-top: none;
+    width: 100%;
+    margin: 0;
+}
+/* feedback*/
+
+
+
+
+.star {
+    font-size: 2.6em;
+    margin: 8px;
+    cursor: pointer;
+    color: #292f3d;
+    transition: color 0.5s;
+}
+
+.star.hovered,
+.star.selected {
+    color: #ffcf87;
+}
+.star i {
+    font-size: 2.6em;
+    margin: 8px;
+    cursor: pointer;
+    color: #292f3d;
+    transition: color 0.5s;
+}
+
+.stars i:nth-child(-n+1) {
+    color: #ffcf87;
+}
+
+.stars i:nth-child(-n+2) {
+    color: #ffcf87;
+}
+
+.stars i:nth-child(-n+3) {
+    color: #ffcf87;
+}
+
+.stars i:nth-child(-n+4) {
+    color: #ffcf87;
+}
+
+.stars i:nth-child(-n+5) {
+    color: #ffcf87;
+}
+
+textarea {
+    width: 100%;
+    background-color: rgb(248, 244, 238);
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    resize: none;
+    font-size: 1.4em;
+    outline: none;
+}
+
+button.cta {
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 32px;
+    background: #8591dd;
+    background-size: 300% 100%;
+    font-size: 1.4em;
+    transition: background-position 0.7s;
+    color:#fff;
+}
+
+button.cta:hover {
+    background-position: 100% 0;
+}
+
+.credit a {
+    text-decoration: none;

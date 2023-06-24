@@ -1,3 +1,4 @@
+console.log("script.js is loaded");
 
 // There are four main classes in the test - Quiz, Question, Answer, Result.
 const question_textElem = document.getElementById("question_text");
@@ -116,3 +117,183 @@ const results =
         new Result("Your logic is perfect!", 9)
     ];
 
+// Array of questions
+const questions =
+    [
+        new Question("If all roses are flowers and some flowers are red, then:",
+            [
+                new Answer("All roses are red", 0),
+                new Answer("Some roses are red", 1),
+                new Answer("No roses are red", 0),
+                new Answer("None of the above", 0)
+            ]),
+
+        new Question("If you take away two from five, you are left with?",
+            [
+                new Answer("Two", 0),
+                new Answer("Three", 1),
+                new Answer("Five", 0),
+                new Answer("Four", 0)
+            ]),
+
+        new Question("If some A are B, and all B are C, then:",
+            [
+                new Answer("Some A are C", 1),
+                new Answer("All A are C", 0),
+                new Answer(" Some C are not A", 0,),
+                new Answer("None of the above", 0,)
+            ]),
+
+        new Question("Which shape does not belong: Rhombus, Rectangle, Square, Circle?",
+            [
+                new Answer("Rhombus", 0),
+                new Answer("Rectangle", 0),
+                new Answer("Square", 0),
+                new Answer("Circle", 1)
+            ]),
+
+        new Question("A farmer had 15 sheep, and all but 8 died. How many are left?",
+            [
+                new Answer("7", 0),
+                new Answer("8", 1),
+                new Answer("0", 0),
+                new Answer("15", 0)
+            ]),
+
+        new Question("If some S are P, and all P are M, then:",
+            [
+                new Answer("All S are M", 0),
+                new Answer("Some S are not M", 0),
+                new Answer("Some M are S", 1),
+                new Answer("All M are S", 0)
+            ]),
+
+        new Question("Tom's mother has three children. The first is named April, the second is named May. What is the name of the third child?",
+            [
+                new Answer("June", 0),
+                new Answer("Tom", 1),
+                new Answer("Anna", 0),
+                new Answer("March", 0)
+            ]),
+
+        new Question("If a red house is made of red bricks, and a blue house is made of blue bricks, what is a greenhouse made of?",
+            [
+                new Answer("Green bricks", 0),
+                new Answer("Glass", 1),
+                new Answer("Plants", 0),
+                new Answer("None of the above", 0)
+            ]),
+
+        new Question("There's a one-story house where everything is yellow. The walls are yellow, the doors are yellow, even all the furniture is yellow. What color are the stairs?",
+            [
+                new Answer("Yellow", 0),
+                new Answer("There are no stairs, it's a one-story house", 1),
+                new Answer("The color is not specified", 0),
+                new Answer("None of the above", 0)
+            ])
+    ];
+// The quiz 
+const quiz = new Quiz(questions, results);
+
+if (question_textElem !== null) {
+    // use question_textElem here
+    Update();
+}
+
+
+
+// Update the quiz
+function Update() {
+    // Check if there are still questions
+    if (quiz.current < quiz.questions.length) {
+        // If yes, change the question in the title
+        console.log("nat" + quiz.questions[quiz.current].text);
+        question_textElem.innerHTML = quiz.questions[quiz.current].text;
+
+        // Remove last answer options
+        buttonsElem.innerHTML = "";
+
+        // Create buttons for new answer options
+        for (let i = 0; i < quiz.questions[quiz.current].answers.length; i++) {
+            let btn = document.createElement("button");
+            btn.className = "button";
+
+            btn.innerHTML = quiz.questions[quiz.current].answers[i].text;
+
+            btn.setAttribute("index", i);
+
+            buttonsElem.appendChild(btn);
+        }
+
+        // Display the current question number
+        countElem.innerHTML = (quiz.current + 1) + " from  " + quiz.questions.length;
+
+        // Call a function that will attach events to the new buttons
+        Init();
+    }
+    else {
+        // If this is the end, then display the result
+        buttonsElem.innerHTML = "";
+        question_textElem.innerHTML = quiz.results[quiz.result].text;
+        countElem.innerHTML = "Points: " + quiz.score + "/9";
+    }
+}
+
+function Init() {
+    // Find all buttons
+    let btns = document.getElementsByClassName("button");
+
+    for (let i = 0; i < btns.length; i++) {
+        // Attach an event to each button
+        // The Click() function is called when the button is clicked
+        btns[i].addEventListener("click", function (e) { Click(e.target.getAttribute("index")); });
+    }
+}
+
+function Click(index) {
+    // Get the number of the correct answer
+    let correct = quiz.Click(index);
+
+    // Find all buttons
+    let btns = document.getElementsByClassName("button");
+
+    // Iterate over all buttons
+    for (let i = 0; i < btns.length; i++) {
+        // If the button matchs to the correct answer, highlight it in green
+        if (i == correct) {
+            btns[i].className = "button button_correct";
+        }
+        // If the button matchs to a wrong answer, highlight it in red
+        else {
+            btns[i].className = "button button_wrong";
+        }
+    }
+
+    // Wait for a second and update the quiz
+    setTimeout(Update, 2500);
+}
+// feedback
+document.addEventListener('DOMContentLoaded', (event) => {
+    var stars = document.querySelectorAll('.star');
+    var ratingInput = document.getElementById('star-rating');
+
+    stars.forEach(function (star) {
+        star.addEventListener('click', function () {
+            console.log("Star clicked!");
+            var value = this.getAttribute('data-value'); // get the data-value attribute
+
+            // loop through all the stars
+            stars.forEach(function (star) {
+                if (star.getAttribute('data-value') <= value) {
+                    star.classList.remove('far'); // remove far class
+                    star.classList.add('fas'); // add fas class
+                } else {
+                    star.classList.remove('fas'); // remove fas class
+                    star.classList.add('far'); // add far class
+                }
+            });
+
+            ratingInput.value = value; // update the input value
+        });
+    });
+});
