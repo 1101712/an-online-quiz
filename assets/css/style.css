@@ -15,6 +15,10 @@ body {
 .heading {
     text-align: center;
     font-size: 2.5rem;
+    font-family: PT Sans Caption, Arial;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 30px 20px 0 20px;
 }
 
 .pack {
@@ -115,11 +119,13 @@ body {
 .menu a:hover {
     border-bottom: 1px solid;
 }
+
 hr {
     border-top: none;
     width: 100%;
     margin: 0;
 }
+
 /* feedback*/
 
 
@@ -137,6 +143,7 @@ hr {
 .star.selected {
     color: #ffcf87;
 }
+
 .star i {
     font-size: 2.6em;
     margin: 8px;
@@ -188,7 +195,7 @@ button.cta {
     background-size: 300% 100%;
     font-size: 1.4em;
     transition: background-position 0.7s;
-    color:#fff;
+    color: #fff;
 }
 
 button.cta:hover {
