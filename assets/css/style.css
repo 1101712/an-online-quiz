@@ -21,6 +21,7 @@ body {
     list-style-type: none;
     margin-right: 30px;
     display: inline-block;
+    float: right;
 
 }
 
@@ -36,12 +37,23 @@ body {
 .heading {
     text-align: center;
     font-size: 2.5rem;
-    font-family: PT Sans Caption, Arial;
+    font-family: PT Sans, Arial;
     letter-spacing: 3px;
-    text-align: center;
     margin: 30px 20px 0 20px;
 }
 
+
+   
+.feedback {
+    text-align: center;
+    font-size: 2.0rem;
+    font-family: PT Sans, Arial;
+    letter-spacing: 3px;
+    margin: 30px 20px 0 20px;
+}
+.smaller-text {
+    font-size: 1.5rem;
+    letter-spacing: 1px;}
 .pack {
     width: 70%;
     height: 100%;
