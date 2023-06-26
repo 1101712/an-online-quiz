@@ -1,5 +1,5 @@
-console.log("script.js is loaded");
-
+/*jshint esversion: 6 */
+/*jshint esversion: 8 */
 // There are four main classes in the test - Quiz, Question, Answer, Result.
 const question_textElem = document.getElementById("question_text");
 const buttonsElem = document.getElementById("buttons");
@@ -207,7 +207,6 @@ function Update() {
     // Check if there are still questions
     if (quiz.current < quiz.questions.length) {
         // If yes, change the question in the title
-        console.log("nat" + quiz.questions[quiz.current].text);
         question_textElem.innerHTML = quiz.questions[quiz.current].text;
 
         // Remove last answer options

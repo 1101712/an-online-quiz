@@ -10,6 +10,29 @@ body {
     color: #3a3a3a;
 }
 
+/*navigation links*/
+.menu {
+    font-size: 110%;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.menu li {
+    list-style-type: none;
+    margin-right: 30px;
+    display: inline-block;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid;
+}
+
 .heading {
     text-align: center;
     font-size: 2.5rem;
@@ -62,7 +85,7 @@ body {
 .button {
     border: 0;
     border-radius: 15px;
-    background: #8591dd;
+    background: #6974bd;
     color: #fff;
     padding: 10px 25px;
     width: 70%;
@@ -96,33 +119,6 @@ body {
 
     margin: 5% 2% 5% 1%;
 
-}
-
-/*navigation links*/
-.menu {
-    font-size: 110%;
-    line-height: 75px;
-}
-
-.menu li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.menu a:hover {
-    border-bottom: 1px solid;
-}
-
-hr {
-    border-top: none;
-    width: 100%;
-    margin: 0;
 }
 
 /* feedback*/
