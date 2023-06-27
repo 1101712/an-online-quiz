@@ -64,9 +64,10 @@ Additionally, the Quiz App encourages repeat visits with its robust array of que
 
 The intuitive star rating system for user feedback also helps us understand user experience, making it a useful tool to continuously improve and update the application, ensuring that it consistently meets and exceeds user expectations.
 
-## Testing
+## Compatibility and Responsiveness Testing:
 
-- The site was tested in Mozilla-Firefox, Microsoft-Edge and Google-Chrome, on different screensizes and devices. Reduced and increased, no problems seen.
+- The site was tested across multiple browsers (Chrome, Firefox, Edge) and on different devices (Desktop, Tablet, Mobile) to ensure compatibility and responsiveness. Although testing on Safari was not possible due to lack of access to compatible devices, the site adheres to modern standards and practices, making it highly likely to work well on Safari too."
+
 - HTML
 
   - No errors were found when passing through the [official W3C validator](https://validator.w3.org/).
@@ -74,10 +75,7 @@ The intuitive star rating system for user feedback also helps us understand user
 - CSS
   - No errors were found when passing through the [official Jigsaw validator](http://jigsaw.w3.org/css-validator/validator?lang=de&profile=css3svg&uri=https%3A%2F%2F8000-1101712-lucid-dreaming-o-ubdmkv1q76.us2.codeanyapp.com%2F&usermedium=all&vextwarning=&warning=1)
 - JavaScript
-  - No errors were found when passing through the [official JavaScript validator](https://jshint.com/). There were the three warnings mentioned
-    - 4 The 'esversion' option cannot be set after any executable code.
-    - 5 The 'esversion' option cannot be set after any executable code.
-    - 251 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (Click)
+  - No errors were found when passing through the [official JavaScript validator](https://jshint.com/).
 
 * Accessibility
   - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools
@@ -86,55 +84,56 @@ The intuitive star rating system for user feedback also helps us understand user
 ## Manual testing
 
 Manual testing of all links and necessary features was done in previously mentioned browsers and devices with a positive result. All pages linked correctly, all features worked correctly, feedback submits in new window.
-|Feature |Expect |Action |Result |
-|:--------- |:---------------|:---------------|:----------------|
-|Home navigation |When clicked the home page will open |Clicked Home on the Nav bar|Home page opened when clicked|
+| Feature | Expect | Action | Result |
+|---------|--------|--------|--------|
+| Home navigation | When clicked the home page will open | Clicked Home on the Nav bar | Home page opened when clicked |
+| Feedback submit button | When submit button is clicked. The result opens in new window | Clicked the submit button on the form. | The form successfully submitted on click. The result opened in new window |
+| Quiz answer buttons | When clicked, the quiz starts | Clicked the Quiz answer buttons | Quiz started successfully |
+| Quiz questions | The user is presented with a new question after answering the previous one | Answered a question in the quiz | The next question appeared |
+| Quiz results | After completing the quiz, the user is presented with their score | Completed the quiz | The user's score was displayed correctly |
+| Mobile Responsiveness | Site should be fully responsive on mobile devices | Tested site on different mobile devices | Site is fully responsive and functional on mobile devices |
 
 ## Manual testing of user stories
 
-### Expectation:
+### Expectation
 
-A visitor should understand the main purpose of the site.
-
-### Result:
-
-As a visitor, I understand that this is a website to help me to learn about lucid dreaming.
-
-### Expectation:
-
-A visitor needs easy intuitive navigation around the site.
+A visitor wants to test their logic skills.
 
 ### Result
 
-As a visitor I can easy understand the navigation.
+As a visitor, I found a variety of logic questions in the quiz which tested my thinking skills.
 
 ### Expectation
 
-A visitor expects .
-
-### Result:
-
-As a visitor I .
-
-### Expectation
-
-A visitor wants.
+A visitor wants to know their score after completing the quiz.
 
 ### Result
 
-As a visitor I .
+As a visitor, I was given a score at the end of the quiz which gave me insight into my performance.
 
 ### Expectation
 
-A visitor needs .
+A visitor wants to provide feedback about the quiz.
 
 ### Result
 
-As a visitor I .
+As a visitor, I found a simple and intuitive form that allowed me to rate the quiz and leave comments.
 
-### Unfixed Bugs
+### Expectation
 
-by testing by [official W3C validator](https://validator.w3.org/) one error was found, 'A charset attribute on a meta element found after the first 1024 bytes. At line 650, column 21 charset="utf-8"><link rel="ic..."' which research showed was not a problem with my code.
+A visitor wants to know the rules of the quiz before starting.
+
+### Result
+
+As a visitor, I found clear instructions about the quiz rules on the home page which helped me understand how to interact with the quiz.
+
+### Expectation
+
+A visitor expects to have fun while interacting with the quiz.
+
+### Result
+
+As a visitor, I found the quiz to be engaging and challenging, making it a fun experience for me.
 
 ## Deployment
 
@@ -151,48 +150,67 @@ The project was deployed to GitHub Pages using the following steps:
 
 ### Content
 
-- The text for the Home page .
-- The rest of the text was composed by me and is my intellectual property.
-- The idea how to ... was taken from [w3docs](3https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html)
-- The instruction how to was taken from [](https://www.y)
+- The text-content of questions and unswers for logic-quiz was generatet by Openais ChatGPT.
+- The rest of the text including the rules was composed by me and is my intellectual property.
+- The idea how to develop an online quiz was taken from [e-kucheriavyi](https://github.com/evgeniikucheriavii/JS-quizes)
+- The instruction how to create a star-rating feedback was taken from [learningrobo.com](https://www.learningrobo.com/2021/09/responsive-feedback-form-with-star.html)
 - The instruction how to creat README file was taken from CodeInstitute Educational materials. [CodeInstituteREADME template](https://github.com/Code-Institute-Solutions/readme-template), Codeinstitute README presentation and [markdownlivepreview](https://markdownlivepreview.com/).
 - This reference list would not be complete without mentioning the beginner resourses for front-end at
   [W3Schools](https://w3schools.com)
-- And extensive notes and tips hosted at the [Mozilla Foundation]
-  (developer.mozilla.org), the home of the worlds' best web browser Firefox.
+- And extensive notes and tips hosted at the [Mozilla Foundation](developer.mozilla.org), the home of the worlds' best web browser Firefox.
 - And, of course, a thanks goes
   to the friendly part of the [StackOverFlow](https://stackoverflow.com), for helping to pinpoint and fix the
   little bugs and features in my code.
+- I would like to acknowledge the resources provided by [Openais ChatGPT](https://chat.openai.com/?model=gpt-4), which was invaluable for problem-solving and getting suggestions throughout the development process.
 
 ### Media
 
-1. Unless stated otherwise, the image for Lucid-Dreaming page I have AI-generated for non-profit use (education/student projects)
-   via the [MidJourney](https://www.midjourney.com) neural network;
-2. The other images including Home page Hero image are licenced for non-profit use (education/student projects) via [DreamsTime](https://www.dreamstime.com/).
+- All the screenshots for the README documentation were self-created and taken from the website during the different stages of development.
 
 ### Languages used
 
 - [HTML5](https://de.wikipedia.org/wiki/HTML5)
 - [CSS3](https://www.w3.org/Style/CSS/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Frameworks, Libraries & Programs used
 
-1. [Google Fonts](https://fonts.google.com/specimen/PT+Sans)
+- [Google Fonts](https://fonts.google.com/specimen/PT+Sans)
 
-- The "Google fonts" tool was used to impoirt the fonts into the style.css file, which is used in this project.
+  - The "Google fonts" tool was used to impoirt the fonts into the style.css file, which is used in this project.
 
-2. [PT Font Family](https://company.paratype.com/pt-sans-pt-serif)
+- [PT Font Family](https://company.paratype.com/pt-sans-pt-serif)
 
-- The fonts from the PT Family were chosed to make the website futureproof. As already mentioned, I
-  plan on adding multilanguage support to this project, and the Paratype fonts are built around non-latin
-  characters, such as the Cyrillic alphabet and special charachters used in post-Soviet countries, which
-  are very rare to find in fonts produced in the anglophone world. While dealing with an impressive amount
-  of letters from different language families, the PT font never compromises on aestetics - it has been
-  created by the internationally acclaimed typeface designer [Alexandra Korolkova](https://en.wikipedia.org/wiki/Alexandra_Korolkova) and Olga Umpelova.
-  However, should the project grow big enough to be translated into east-Asian or south-Asian languages,
-  new fonts shall be added to support, for example, Japanese or Thai fonts.
+  - The fonts from the PT Family were chosed to make the website futureproof. As already mentioned, I
+    plan on adding multilanguage support to this project, and the Paratype fonts are built around non-latin
+    characters, such as the Cyrillic alphabet and special charachters used in post-Soviet countries, which
+    are very rare to find in fonts produced in the anglophone world. While dealing with an impressive amount
+    of letters from different language families, the PT font never compromises on aestetics - it has been
+    created by the internationally acclaimed typeface designer [Alexandra Korolkova](https://en.wikipedia.org/wiki/Alexandra_Korolkova) and Olga Umpelova.
+    However, should the project grow big enough to be translated into east-Asian or south-Asian languages,
+    new fonts shall be added to support, for example, Japanese or Thai fonts.
+
+- [jQuery](https://jquery.com/)
+
+  - jQuery was used for handling certain interactive elements on the site and for making AJAX calls.
+
+- [GitHub](https://github.com/)
+
+  - GitHub was used for version control and for hosting the project's repository.
+
+- [GitPod](https://www.gitpod.io/)
+
+  - GitPod was used as the development environment where the website was built.
+
+- [Bootstrap](https://getbootstrap.com/)
+
+  - Bootstrap was used to provide responsive design and layout for the website.
+
+- [Font Awesome](https://fontawesome.com/)
+  Font Awesome was used to add icons for improved user interface design and UX.
 
 ## Acknowledgements
 
 - to Kay Welfare for great psyhological support and motivation.
-- to my daughter Anna and my partner Stefan to great support, motivation and helping to resolve the technical questions.
+- to my mentor Antonio Rodriguez for helping to resolve the technical questions.
+- I would like to mentions Openais ChatGPT, which gave me a huge opportunity to study quick and very efficient.
