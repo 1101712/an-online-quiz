@@ -1,8 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
     /*jshint esversion: 6 */
     /*jshint esversion: 8 */
+    // feedback
+    var stars = document.querySelectorAll('.star');
+    var ratingInput = document.getElementById('star-rating');
+
+    stars.forEach(function (star) {
+        star.addEventListener('click', function () {
+            console.log("Star clicked!");
+            var value = this.getAttribute('data-value'); // get the data-value attribute
+
+            // loop through all the stars
+            stars.forEach(function (star) {
+                if (star.getAttribute('data-value') <= value) {
+                    star.classList.remove('far'); // remove far class
+                    star.classList.add('fas'); // add fas class
+                } else {
+                    star.classList.remove('fas'); // remove fas class
+                    star.classList.add('far'); // add far class
+                }
+            });
+
+            ratingInput.value = value; // update the input value
+        });
+    });
     // There are four main classes in the test - Quiz, Question, Answer, Result.
     const question_textElem = document.getElementById("question_text");
     const buttonsElem = document.getElementById("buttons");
@@ -274,31 +296,5 @@ document.addEventListener("DOMContentLoaded", function () {
         // Wait for a second and update the quiz
         setTimeout(Update, 2500);
     }
-    // feedback
-    document.addEventListener('DOMContentLoaded', (event) => {
-        var stars = document.querySelectorAll('.star');
-        var ratingInput = document.getElementById('star-rating');
-
-        stars.forEach(function (star) {
-            star.addEventListener('click', function () {
-                console.log("Star clicked!");
-                var value = this.getAttribute('data-value'); // get the data-value attribute
-
-                // loop through all the stars
-                stars.forEach(function (star) {
-                    if (star.getAttribute('data-value') <= value) {
-                        star.classList.remove('far'); // remove far class
-                        star.classList.add('fas'); // add fas class
-                    } else {
-                        star.classList.remove('fas'); // remove fas class
-                        star.classList.add('far'); // add far class
-                    }
-                });
-
-                ratingInput.value = value; // update the input value
-            });
-        });
-    });
-
 
 });

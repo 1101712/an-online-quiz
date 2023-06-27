@@ -27,7 +27,7 @@ Furthermore, the last part of the script is for a star-rating feedback system. I
 - Dynamic Quiz Progression
   - As the user goes through the quiz, the user interface updates dynamically. The current question and multiple-choice options are displayed, and the question count is updated.
 - Answer Validation
-  - Once a user selects an answer, the app validates the answer. If the answer is correct, it is highlighted in green, and if the answer is incorrect, it is highlighted in red. The correct answer is also revealed if the user gets the question wrong. ![This is a screenshot of a page of the website](assets/images/answers.jpg "This is a screenshot of a page of the website")
+  - Once a user selects an answer, the app validates the answer. If the answer is correct, it is highlighted in green, and if the answer is incorrect, it is highlighted in red. The correct answer is also revealed if the user gets the question wrong. ![This is a screenshot of a page of the website](assets/images/medium_screen.jpg "This is a screenshot of a page of the website") ![This is a screenshot of a page of the website](assets/images/answers.jpg "This is a screenshot of a page of the website")
 - End-of-Quiz Results
   - At the end of the quiz, a result is displayed based on the user's total score. There are different results depending on the range in which the user's score falls.![This is a screenshot of a page of the website](assets/images/result.jpg "This is a screenshot of a page of the website")
 - Interactive Star Rating Feedback System ![This is a screenshot of a page of the website](assets/images/feedback_completed.jpg "This is a screenshot of a page of the website")
@@ -69,12 +69,15 @@ The intuitive star rating system for user feedback also helps us understand user
 - The site was tested in Mozilla-Firefox, Microsoft-Edge and Google-Chrome, on different screensizes and devices. Reduced and increased, no problems seen.
 - HTML
 
-  - [official W3C validator](https://validator.w3.org/) one error was found , 'A charset attribute on a meta element found after the first 1024 bytes. At line 650, column 21 charset="utf-8"><link rel="ic..."' which research showed was not a problem with my code.
+  - No errors were found when passing through the [official W3C validator](https://validator.w3.org/).
 
 - CSS
   - No errors were found when passing through the [official Jigsaw validator](http://jigsaw.w3.org/css-validator/validator?lang=de&profile=css3svg&uri=https%3A%2F%2F8000-1101712-lucid-dreaming-o-ubdmkv1q76.us2.codeanyapp.com%2F&usermedium=all&vextwarning=&warning=1)
 - JavaScript
-  - No errors were found when passing through the [official JavaScript validator](https://jshint.com/). There was one warning on line 248 which may lead to confusing semantics.![This is a screenshot of a page of the website](assets/images/JSHintQuitz.jpg "This is a screenshot of a page of the website")
+  - No errors were found when passing through the [official JavaScript validator](https://jshint.com/). There were the three warnings mentioned
+    - 4 The 'esversion' option cannot be set after any executable code.
+    - 5 The 'esversion' option cannot be set after any executable code.
+    - 251 Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (Click)
 
 * Accessibility
   - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools
