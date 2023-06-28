@@ -44,20 +44,11 @@ body {
     margin: 30px 20px 0 20px;
 }
 
-
-
-.feedback {
-    text-align: center;
-    font-size: 2.0rem;
-    font-family: PT Sans, Arial;
-    letter-spacing: 3px;
-    margin: 30px 20px 0 20px;
-}
-
 .smaller-text {
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
+/* content-area*/
 
 .pack {
     width: 70%;
@@ -74,6 +65,7 @@ body {
     text-align: center;
     border: 0;
 }
+/* quiz*/
 
 .q__up {
     font-size: 20pt;
@@ -139,7 +131,13 @@ body {
 }
 
 /* feedback*/
-
+.feedback {
+    text-align: center;
+    font-size: 2.0rem;
+    font-family: PT Sans, Arial;
+    letter-spacing: 3px;
+    margin: 30px 20px 0 20px;
+}
 .star {
     font-size: 2.6em;
     margin: 8px;
@@ -217,4 +215,7 @@ textarea {
 }
 /* rules text*/
 
-#rules_text {}
+#rules_text {
+ padding: 0 20% 0 20%;
+ text-align: left;
+}

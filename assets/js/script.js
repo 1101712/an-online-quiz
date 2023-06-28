@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             var emailInput = document.getElementById('email');
             var emailError = document.getElementById('email-error');
-            var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+            var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/; // Regex email validator
 
             if (emailInput.value === "") {
                 // No email provided
