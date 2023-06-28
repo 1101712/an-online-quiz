@@ -98,7 +98,8 @@ Manual testing of all links and necessary features was done in previously mentio
 | Quiz Answer Buttons | When clicked, the quiz starts | Clicked the Quiz answer buttons | Quiz started successfully |
 | Quiz Questions | The user is presented with a new question after answering the previous one | Answered a question in the quiz | The next question appeared |
 | Quiz results | After completing the quiz, the user is presented with their score | Completed the quiz | The user's score was displayed correctly |
-| Mobile Responsiveness | Site should be fully responsive on mobile devices | Tested site on different mobile devices | Site is fully responsive and functional on mobile devices |Email input validation|Input should validate whether user email is in correct format |Entered emails in different formats, both valid and invalid | Correctly validated email format, giving appropriate feedback for invalid formats|
+| Mobile Responsiveness | Site should be fully responsive on mobile devices | Tested site on different mobile devices | Site is fully responsive and functional on mobile devices |
+Email input validation|Input should validate whether user email is in correct format |Entered emails in different formats, both valid and invalid | Correctly validated email format, giving appropriate feedback for invalid formats|
 
 ## Manual testing of user stories
 
