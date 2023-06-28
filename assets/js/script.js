@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // feedback
     var stars = document.querySelectorAll('.star');
     var ratingInput = document.getElementById('star-rating');
+
     stars.forEach(function (star) {
         star.addEventListener('click', function () {
-            console.log("Star clicked!");
             var value = this.getAttribute('data-value'); // get the data-value attribute
 
             // loop through all the stars
@@ -22,6 +22,28 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             ratingInput.value = value; // update the input value
         });
+    });
+
+    // Email validation
+    document.getElementById('feedback-form').addEventListener('submit', function (event) {
+        // Prevent the form from submitting normally
+        event.preventDefault();
+
+        var emailInput = document.getElementById('email');
+        var emailError = document.getElementById('email-error');
+        var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+
+        if (emailInput.value === "") {
+            // No email provided
+            emailError.textContent = "Please provide an email.";
+        } else if (!emailRegex.test(emailInput.value)) {
+            // Invalid email
+            emailError.textContent = "Please provide a valid email.";
+        } else {
+            // Valid email
+            emailError.textContent = "";
+            this.submit();
+        }
     });
     // There are four main classes in the test - Quiz, Question, Answer, Result.
     const question_textElem = document.getElementById("question_text");

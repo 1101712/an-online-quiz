@@ -43,7 +43,7 @@ body {
 }
 
 
-   
+
 .feedback {
     text-align: center;
     font-size: 2.0rem;
@@ -51,9 +51,12 @@ body {
     letter-spacing: 3px;
     margin: 30px 20px 0 20px;
 }
+
 .smaller-text {
     font-size: 1.5rem;
-    letter-spacing: 1px;}
+    letter-spacing: 1px;
+}
+
 .pack {
     width: 70%;
     height: 100%;
@@ -189,6 +192,11 @@ textarea {
 
 .credit a {
     text-decoration: none;
+}
+
+#email-error {
+    color: #f37e09;
+    margin-top: 10px;
 }
 
 /* rules text*/

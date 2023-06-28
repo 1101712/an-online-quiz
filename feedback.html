@@ -31,22 +31,26 @@
             </ul>
         </nav>
     </header>
-    <div class="pack">
-        <div class="main_content">
-            <form action="https://formdump.codeinstitute.net" method="post" id="feedback-form" target="_blank"
-                rel="noopener">
-                <input type="hidden" id="star-rating" name="starRating" value="">
-                <div class="stars">
-                    <i class="star far fa-star" data-value="1"></i>
-                    <i class="star far fa-star" data-value="2"></i>
-                    <i class="star far fa-star" data-value="3"></i>
-                    <i class="star far fa-star" data-value="4"></i>
-                    <i class="star far fa-star" data-value="5"></i>
-                </div>
-                <textarea name="feedbackText" rows="10" placeholder="Here you can leave a message"></textarea>
-                <button class="button">Share your thoughts</button><br>
-            </form>
-        </div>
+    <div>
+        <div class="pack">
+    <div class="main_content">
+        <form action="https://formdump.codeinstitute.net" method="post" id="feedback-form" target="_blank" rel="noopener">
+            <input type="hidden" id="star-rating" name="starRating" value="">
+            <div class="stars">
+                <i class="star far fa-star" data-value="1"></i>
+                <i class="star far fa-star" data-value="2"></i>
+                <i class="star far fa-star" data-value="3"></i>
+                <i class="star far fa-star" data-value="4"></i>
+                <i class="star far fa-star" data-value="5"></i>
+            </div>
+            <textarea name="feedbackText" rows="10" placeholder="Here you can leave a message"></textarea>
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email"><br>
+            <button class="button">Share your thoughts</button><br>
+            <p id="email-error"></p>
+        </form>
+    </div>
+
     </div>
     <footer>
         <div class="contact">
