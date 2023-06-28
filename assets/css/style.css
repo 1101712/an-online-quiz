@@ -8,6 +8,8 @@ body {
     overflow: hidden;
     font-family: PT Sans, Arial;
     color: #3a3a3a;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 /*navigation links*/
@@ -189,7 +191,9 @@ textarea {
     font-size: 1.4em;
     outline: none;
 }
-
+#feedback-field{
+    margin-bottom: 15px;
+}
 .credit a {
     text-decoration: none;
 }

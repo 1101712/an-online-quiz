@@ -271,6 +271,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 btns[i].className = "button button_wrong";
             }
         }
-        setTimeout(Update, 2500); // Wait for a second and update the quiz
+        setTimeout(Update, 1500); // Wait for a second and update the quiz
     }
 });

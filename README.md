@@ -2,25 +2,27 @@
 
 ## overview
 
-This project is a web-based logic quiz designed to test users' logical and reasoning skills. Users can interact with a series of logic-based questions, view the rules, and provide feedback. Each question offers multiple-choice answers. The quiz tracks the user's score and displays a result at the end, based on this score. The user interface is updated as the user progresses through the quiz.
-
-Moreover, the latter part of the script is dedicated to a star-rating feedback system. It listens for click events on each star and updates the visual display of the stars, as well as a hidden input value. This feedback system allows users to rate the quiz after they complete it.
+This project is a web-based logic quiz designed to test users' logical and reasoning skills. Users can interact with a series of logic-based questions, view the rules, and provide feedback upon completion. <br>
+Each question in the quiz presents multiple-choice answers, and the system keeps track of the user's score. At the end of the quiz, the user receives a result based on their total score. The user interface dynamically updates as the user progresses through the quiz, reflecting real-time performance.<br>
+A significant enhancement in this version is the incorporation of client-side email validation in the feedback form. Now, the system checks the validity of the email provided by the user in real-time, and provides immediate feedback if the email format doesn't comply with the standard format, improving the overall user experience.<br>
+Furthermore, the project features a star-rating feedback system. This system listens for click events on each star and updates the visual display of the stars, as well as a hidden input value. This interactive and visual feedback system allows users to rate their experience with the quiz once they complete it. <br>
+Behind the scenes, we've also made significant improvements to the JavaScript logic to ensure the smooth functioning of the quiz and the feedback form, and prevent any conflicts between the two. We have separated the feedback page and the quiz page by adding a body id attribute to the HTML structure, allowing the different JavaScript functionalities to operate independently of each other.
 
 ![This is a screenshot of pages of the website](assets/images/screens.jpg "This is a screenshot of pages of the website")
 
 ## Features
 
--  Home Page: The home page introduces users to the quiz, providing them with the opportunity to test their logic.
+- Home Page: The home page introduces users to the quiz, providing them with the opportunity to test their logic.
 - Rules Page: The Rules page helps users familiarize themselves with the quiz structure, including how to answer questions, the scoring system, and how results are presented.
 - Feedback Page: The Feedback page offers users a platform to leave star ratings and textual feedback about their experiences with the quiz.
 
 ## Existing Features
 
 - Navigation Bar
-  - Featured on all three page and is identical in each page to allow for easy navigation.
-  - This section will allow users to easily navigate with all devices without having to revert to the previous page via the "back" button.
+  - Featured on all three page and is identical in each, allowing for easy navigation.
+  - This section allows users to easily navigate with all devices without having to revert to the previous page via the "back" button.
 - Logic Quiz
-  - The core feature of this application is a logic quiz. It is designed with various logical questions that test the user's ability to deduce and infer from the given information.
+  - The core feature of this application is a logic quiz designed with various logical questions that test the user's ability to deduce and infer from the given information.
 - Multiple Choice Questions
   - Each question in the quiz is a multiple-choice question. Users can choose one of the given options as their answer.
 - Automated Scoring
@@ -28,17 +30,23 @@ Moreover, the latter part of the script is dedicated to a star-rating feedback s
 - Dynamic Quiz Progression
   - As the user goes through the quiz, the user interface updates dynamically. The current question and multiple-choice options are displayed, and the question count is updated.
 - Answer Validation
-  - Once a user selects an answer, the app validates the answer. If the answer is correct, it is highlighted in green, and if the answer is incorrect, it is highlighted in red. The correct answer is also revealed if the user gets the question wrong. ![This is a screenshot of a page of the website](assets/images/medium_screen.jpg "This is a screenshot of a page of the website") ![This is a screenshot of a page of the website](assets/images/answers.jpg "This is a screenshot of a page of the website")
+  - Once a user selects an answer, the app validates the answer. If the answer is correct, it is highlighted in green, and if the answer is incorrect, it is highlighted in orange. The correct answer is also revealed if the user gets the question wrong. ![This is a screenshot of a page of the website](assets/images/medium_screen.jpg "This is a screenshot of a page of the website") ![This is a screenshot of a page of the website](assets/images/answers.jpg "This is a screenshot of a page of the website")
 - End-of-Quiz Results
   - At the end of the quiz, a result is displayed based on the user's total score. There are different results depending on the range in which the user's score falls.![This is a screenshot of a page of the website](assets/images/result.jpg "This is a screenshot of a page of the website")
-- Interactive Star Rating Feedback System ![This is a screenshot of a page of the website](assets/images/feedback_completed.jpg "This is a screenshot of a page of the website")
-  - After completing the quiz, users can provide feedback by giving a star rating. The rating system is interactive, with the stars changing color when clicked. The submitting page opens in a new window. ![This is a screenshot of a page of the website](assets/images/data.jpg "This is a screenshot of a page of the website")
+- Interactive Star Rating Feedback System ![This is a screenshot of a page of the website](assets/images/feedback_empty.jpg "This is a screenshot of a page of the website")
+- Client-Side Email Validation
+  - The feedback form now includes a client-side email validation feature. It checks the validity of the email entered by the user in real-time and provides immediate feedback if the email format doesn't comply with the standard.![This is a screenshot of a page of the website](assets/images/email_wrong.jpg "This is a screenshot of a page of the website")
+  - After completing the quiz, users can provide feedback by giving a star rating. The rating system is interactive, with the stars changing color when clicked. The user feedback is recorded in a separate feedback form that opens in a new window. ![This is a screenshot of a page of the website](assets/images/data.jpg "This is a screenshot of a page of the website")
+- Improved Script Logic
+
+  - Significant improvements have been made to the JavaScript logic to ensure the smooth functioning of the quiz and the feedback form, and prevent any conflicts between the two. The feedback page and the quiz page have been effectively separated using a body id attribute in the HTML structure.
+
 - Responsive Design
   - The quiz application is designed to work seamlessly across different device sizes and orientations, making it accessible to users on desktops, tablets, and smartphones.
 - Clean, User-Friendly Interface
   - The application boasts a clean, intuitive interface that makes it easy for users to navigate through the quiz and understand how to interact with the application.
 
-## UX
+## User Experiencr (UX)
 
 - Easy to Start
   - As soon as a user arrives at the application, they are greeted with the first question of the quiz, along with multiple-choice options. There's no need to navigate through menus or click a 'start' button, which provides a seamless start to the experience.
@@ -90,7 +98,7 @@ Manual testing of all links and necessary features was done in previously mentio
 | Quiz Answer Buttons | When clicked, the quiz starts | Clicked the Quiz answer buttons | Quiz started successfully |
 | Quiz Questions | The user is presented with a new question after answering the previous one | Answered a question in the quiz | The next question appeared |
 | Quiz results | After completing the quiz, the user is presented with their score | Completed the quiz | The user's score was displayed correctly |
-| Mobile Responsiveness | Site should be fully responsive on mobile devices | Tested site on different mobile devices | Site is fully responsive and functional on mobile devices |
+| Mobile Responsiveness | Site should be fully responsive on mobile devices | Tested site on different mobile devices | Site is fully responsive and functional on mobile devices |Email input validation|Input should validate whether user email is in correct format |Entered emails in different formats, both valid and invalid | Correctly validated email format, giving appropriate feedback for invalid formats|
 
 ## Manual testing of user stories
 
@@ -134,6 +142,14 @@ A visitor expects to have fun while interacting with the quiz.
 
 As a visitor, I found the quiz to be engaging and challenging, making it a fun experience for me.
 
+### Expectation
+
+A visitor wants to be assured that their email address is correctly inputted before submission.
+
+### Result
+
+As a visitor, I found an email validation feature in the feedback form which notified me if my email was incorrectly formatted, ensuring that I was able to submit my feedback successfully.
+
 ## Deployment
 
 The project was deployed to GitHub Pages using the following steps:
@@ -153,6 +169,7 @@ The project was deployed to GitHub Pages using the following steps:
 - The rest of the text including the rules was composed by me and is my intellectual property.
 - The concept for developing an online quiz was inspired by [e-kucheriavyi](https://github.com/evgeniikucheriavii/JS-quizes)
 - The instructions for creating a star-rating feedback system were taken from [learningrobo.com](https://www.learningrobo.com/2021/09/responsive-feedback-form-with-star.html)
+- The concept for developing an online email validator was inspired by [stackoverflow.com](https://stackoverflow.com/questions/5342375/regex-email-validation) and [abstract](https://www.abstractapi.com/tools/email-regex-guide)
 - The instructions for creating README file were taken from CodeInstitute Educational materials. [CodeInstituteREADME template](https://github.com/Code-Institute-Solutions/readme-template), Codeinstitute README presentation and [markdownlivepreview](https://markdownlivepreview.com/).
 - I would like to acknowledge the beginner resources for front-end at [W3Schools](https://w3schools.com) and extensive notes and tips hosted by the [Mozilla Foundation](developer.mozilla.org).
 - A big thanks you goes to the helpful community at [StackOverFlow](https://stackoverflow.com), for aiding in troubleshooting and refining my code.
@@ -201,6 +218,14 @@ The project was deployed to GitHub Pages using the following steps:
 
 - [Font Awesome](https://fontawesome.com/)
   - Font Awesome was used to add icons for improved user interface design and UX.
+
+### Future Enhancements
+
+As part of my ongoing commitment to improving the user experience and the educational value of this application, I plan to implement additional features as time permits. One such feature is the inclusion of logic explanations for the correct answers.
+
+Explanation of Correct Answers (Planned)
+
+- In the future, I aim to add explanations for the logic behind the correct answers to each question. This feature is intended to serve as a learning resource for users who want to understand how the correct answer was derived. The explanations will be displayed in a section beneath the main answers, providing users with immediate feedback and an opportunity to learn as they progress through the quiz.
 
 ## Acknowledgements
 
