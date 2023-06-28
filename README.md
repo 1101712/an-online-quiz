@@ -2,16 +2,17 @@
 
 ## overview
 
-This project is a web-based logic quiz designed to test users' logical and reasoning skills. Users can interact with the quiz with a series of logic-based questions, answer questions, view the rules, and provide feedback. Each question has multiple-choice answers. The quiz keeps track of the user's score and displays a result at the end based on the user's score. The user interface is updated as the user progresses through the quiz.<br>
-Furthermore, the last part of the script is for a star-rating feedback system. It listens for click events on each star and updates the visual display of the stars and a hidden input value accordingly. This feedback system allows users to rate the quiz after completing it.
+This project is a web-based logic quiz designed to test users' logical and reasoning skills. Users can interact with a series of logic-based questions, view the rules, and provide feedback. Each question offers multiple-choice answers. The quiz tracks the user's score and displays a result at the end, based on this score. The user interface is updated as the user progresses through the quiz.
 
-![This is a screenshot of pages of the website](assets/images/screens.jpg "This are screenshots of pages of the website")
+Moreover, the latter part of the script is dedicated to a star-rating feedback system. It listens for click events on each star and updates the visual display of the stars, as well as a hidden input value. This feedback system allows users to rate the quiz after they complete it.
+
+![This is a screenshot of pages of the website](assets/images/screens.jpg "This is a screenshot of pages of the website")
 
 ## Features
 
-- Home Page: The home page introduces users to the quiz and allows them to begin testing their logic.
-- Rules Page: On the Rules page, users can familiarize themselves with the structure of the quiz, how to answer questions, the scoring system, and the results presentation.
-- Feedback Page: The Feedback page provides users with a way to leave star ratings and text feedback about their experience with the quiz.
+-  Home Page: The home page introduces users to the quiz, providing them with the opportunity to test their logic.
+- Rules Page: The Rules page helps users familiarize themselves with the quiz structure, including how to answer questions, the scoring system, and how results are presented.
+- Feedback Page: The Feedback page offers users a platform to leave star ratings and textual feedback about their experiences with the quiz.
 
 ## Existing Features
 
@@ -60,8 +61,6 @@ The main goal of our Quiz App is to provide an interactive, engaging, and fun pl
 
 This application is designed with the intention to cater to a wide range of audiences, from students seeking a study break, to adults who wish to enjoy a brief respite from their daily routines, or those who simply enjoy testing their knowledge on a variety of topics.
 
-Additionally, the Quiz App encourages repeat visits with its robust array of questions and intuitive interface, thereby enhancing user engagement. The scoring system and result feedback provide a competitive edge, prompting users to strive for improvement.
-
 The intuitive star rating system for user feedback also helps us understand user experience, making it a useful tool to continuously improve and update the application, ensuring that it consistently meets and exceeds user expectations.
 
 ## Compatibility and Responsiveness Testing:
@@ -83,13 +82,13 @@ The intuitive star rating system for user feedback also helps us understand user
 
 ## Manual testing
 
-Manual testing of all links and necessary features was done in previously mentioned browsers and devices with a positive result. All pages linked correctly, all features worked correctly, feedback submits in new window.
+Manual testing of all links and necessary features was done in previously mentioned browsers and devices with a positive result. All pages linked correctly, all features worked as expected, feedback submission opened in a new window.
 | Feature | Expect | Action | Result |
 |---------|--------|--------|--------|
-| Home navigation | When clicked the home page will open | Clicked Home on the Nav bar | Home page opened when clicked |
-| Feedback submit button | When submit button is clicked. The result opens in new window | Clicked the submit button on the form. | The form successfully submitted on click. The result opened in new window |
-| Quiz answer buttons | When clicked, the quiz starts | Clicked the Quiz answer buttons | Quiz started successfully |
-| Quiz questions | The user is presented with a new question after answering the previous one | Answered a question in the quiz | The next question appeared |
+| Home navigation | When clicked, the home page will open | Clicked Home on the Nav bar | Home page opened when clicked |
+| Feedback Submit Button | When submit button is clicked, the result opens in a new window | Clicked the submit button on the form. | The form successfully submitted on click, the result opened in new window |
+| Quiz Answer Buttons | When clicked, the quiz starts | Clicked the Quiz answer buttons | Quiz started successfully |
+| Quiz Questions | The user is presented with a new question after answering the previous one | Answered a question in the quiz | The next question appeared |
 | Quiz results | After completing the quiz, the user is presented with their score | Completed the quiz | The user's score was displayed correctly |
 | Mobile Responsiveness | Site should be fully responsive on mobile devices | Tested site on different mobile devices | Site is fully responsive and functional on mobile devices |
 
@@ -150,18 +149,14 @@ The project was deployed to GitHub Pages using the following steps:
 
 ### Content
 
-- The text-content of questions and unswers for logic-quiz was generatet by Openais ChatGPT.
+- The text-content for the logic-quiz questions and answers was generatet by OpenAl's ChatGPT.
 - The rest of the text including the rules was composed by me and is my intellectual property.
-- The idea how to develop an online quiz was taken from [e-kucheriavyi](https://github.com/evgeniikucheriavii/JS-quizes)
-- The instruction how to create a star-rating feedback was taken from [learningrobo.com](https://www.learningrobo.com/2021/09/responsive-feedback-form-with-star.html)
-- The instruction how to creat README file was taken from CodeInstitute Educational materials. [CodeInstituteREADME template](https://github.com/Code-Institute-Solutions/readme-template), Codeinstitute README presentation and [markdownlivepreview](https://markdownlivepreview.com/).
-- This reference list would not be complete without mentioning the beginner resourses for front-end at
-  [W3Schools](https://w3schools.com)
-- And extensive notes and tips hosted at the [Mozilla Foundation](developer.mozilla.org), the home of the worlds' best web browser Firefox.
-- And, of course, a thanks goes
-  to the friendly part of the [StackOverFlow](https://stackoverflow.com), for helping to pinpoint and fix the
-  little bugs and features in my code.
-- I would like to acknowledge the resources provided by [Openais ChatGPT](https://chat.openai.com/?model=gpt-4), which was invaluable for problem-solving and getting suggestions throughout the development process.
+- The concept for developing an online quiz was inspired by [e-kucheriavyi](https://github.com/evgeniikucheriavii/JS-quizes)
+- The instructions for creating a star-rating feedback system were taken from [learningrobo.com](https://www.learningrobo.com/2021/09/responsive-feedback-form-with-star.html)
+- The instructions for creating README file were taken from CodeInstitute Educational materials. [CodeInstituteREADME template](https://github.com/Code-Institute-Solutions/readme-template), Codeinstitute README presentation and [markdownlivepreview](https://markdownlivepreview.com/).
+- I would like to acknowledge the beginner resources for front-end at [W3Schools](https://w3schools.com) and extensive notes and tips hosted by the [Mozilla Foundation](developer.mozilla.org).
+- A big thanks you goes to the helpful community at [StackOverFlow](https://stackoverflow.com), for aiding in troubleshooting and refining my code.
+- I would like to acknowledge the resources provided by [Openais ChatGPT](https://chat.openai.com/?model=gpt-4), which proved invaluable for problem-solving and getting suggestions throughout the development process.
 
 ### Media
 
@@ -187,8 +182,6 @@ The project was deployed to GitHub Pages using the following steps:
     are very rare to find in fonts produced in the anglophone world. While dealing with an impressive amount
     of letters from different language families, the PT font never compromises on aestetics - it has been
     created by the internationally acclaimed typeface designer [Alexandra Korolkova](https://en.wikipedia.org/wiki/Alexandra_Korolkova) and Olga Umpelova.
-    However, should the project grow big enough to be translated into east-Asian or south-Asian languages,
-    new fonts shall be added to support, for example, Japanese or Thai fonts.
 
 - [jQuery](https://jquery.com/)
 
@@ -211,6 +204,6 @@ The project was deployed to GitHub Pages using the following steps:
 
 ## Acknowledgements
 
-- to Kay Welfare for great psyhological support and motivation.
-- to my mentor Antonio Rodriguez for helping to resolve the technical questions.
+- To Kay Welfare, for providing great psyhological support and motivation.
+- To my mentor Antonio Rodriguez for helping to resolve the technical questions.
 - I would like to mentions Openais ChatGPT, which gave me a huge opportunity to study quick and very efficient.
