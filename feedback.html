@@ -12,7 +12,7 @@
     <title>Star rating feedback</title>
 </head>
 
-<body>
+<body id="feedback-page">
     <header>
         <h1 class="feedback"> Thank you for your participation.<br>
             <span class="smaller-text">Your feedback is valuable in helping to improve this quiz.</span>
@@ -44,10 +44,14 @@
                 <i class="star far fa-star" data-value="5"></i>
             </div>
             <textarea name="feedbackText" rows="10" placeholder="Here you can leave a message"></textarea>
+            <div class="email-section"></div>
+            <div class="email-input-group">
             <label for="email">Your Email:</label>
-            <input type="text" id="email" name="email"><br>
-            <button class="button">Share your thoughts</button><br>
+            <input type="text" id="email" name="email"></div>
             <p id="email-error"></p>
+            
+            <button class="button">Share your thoughts</button><br>
+            </div>
         </form>
     </div>
 

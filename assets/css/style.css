@@ -198,7 +198,19 @@ textarea {
     color: #f37e09;
     margin-top: 10px;
 }
+.email-section {
+    text-align: left;
+    margin-left: 15%;
+}
+.email-input-group label,
+.email-input-group input {
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.email-input-group input {
+    margin-left: 10px;
+}
 /* rules text*/
 
 #rules_text {}

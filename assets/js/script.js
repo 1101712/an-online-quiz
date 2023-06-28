@@ -2,49 +2,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /*jshint esversion: 6 */
     /*jshint esversion: 8 */
-    // feedback
-    var stars = document.querySelectorAll('.star');
-    var ratingInput = document.getElementById('star-rating');
+    if (document.getElementById('feedback-page')) {
+        // feedback
+        var stars = document.querySelectorAll('.star');
+        var ratingInput = document.getElementById('star-rating');
 
-    stars.forEach(function (star) {
-        star.addEventListener('click', function () {
-            var value = this.getAttribute('data-value'); // get the data-value attribute
+        stars.forEach(function (star) {
+            star.addEventListener('click', function () {
+                var value = this.getAttribute('data-value'); // get the data-value attribute
 
-            // loop through all the stars
-            stars.forEach(function (star) {
-                if (star.getAttribute('data-value') <= value) {
-                    star.classList.remove('far'); // remove far class
-                    star.classList.add('fas'); // add fas class
-                } else {
-                    star.classList.remove('fas'); // remove fas class
-                    star.classList.add('far'); // add far class
-                }
+                // loop through all the stars
+                stars.forEach(function (star) {
+                    if (star.getAttribute('data-value') <= value) {
+                        star.classList.remove('far'); // remove far class
+                        star.classList.add('fas'); // add fas class
+                    } else {
+                        star.classList.remove('fas'); // remove fas class
+                        star.classList.add('far'); // add far class
+                    }
+                });
+                ratingInput.value = value; // update the input value
             });
-            ratingInput.value = value; // update the input value
         });
-    });
 
-    // Email validation
-    document.getElementById('feedback-form').addEventListener('submit', function (event) {
-        // Prevent the form from submitting normally
-        event.preventDefault();
+        // Email validation
+        document.getElementById('feedback-form').addEventListener('submit', function (event) {
+            // Prevent the form from submitting normally
+            event.preventDefault();
 
-        var emailInput = document.getElementById('email');
-        var emailError = document.getElementById('email-error');
-        var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+            var emailInput = document.getElementById('email');
+            var emailError = document.getElementById('email-error');
+            var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
 
-        if (emailInput.value === "") {
-            // No email provided
-            emailError.textContent = "Please provide an email.";
-        } else if (!emailRegex.test(emailInput.value)) {
-            // Invalid email
-            emailError.textContent = "Please provide a valid email.";
-        } else {
-            // Valid email
-            emailError.textContent = "";
-            this.submit();
-        }
-    });
+            if (emailInput.value === "") {
+                // No email provided
+                emailError.textContent = "Please provide an email.";
+            } else if (!emailRegex.test(emailInput.value)) {
+                // Invalid email
+                emailError.textContent = "Please provide a valid email.";
+            } else {
+                // Valid email
+                emailError.textContent = "";
+                this.submit();
+            }
+        });
+    }
     // There are four main classes in the test - Quiz, Question, Answer, Result.
     const question_textElem = document.getElementById("question_text");
     const buttonsElem = document.getElementById("buttons");
