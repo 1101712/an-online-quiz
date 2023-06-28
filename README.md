@@ -200,7 +200,7 @@ The project was deployed to GitHub Pages using the following steps:
   - Bootstrap was used to provide responsive design and layout for the website.
 
 - [Font Awesome](https://fontawesome.com/)
-  Font Awesome was used to add icons for improved user interface design and UX.
+  - Font Awesome was used to add icons for improved user interface design and UX.
 
 ## Acknowledgements
 
